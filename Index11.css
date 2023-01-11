@@ -1,0 +1,106 @@
+/*Common*/
+nav a{
+   text-decoration: none;
+   line-height: 1.5em; 
+}
+
+nav a:hover {
+    color: rgb(158, 158, 158);
+}
+
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: rgb(255, 255, 255)
+}
+
+#box_1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: georgia;
+    text-align: justify;
+    line-height: 1.5em;
+    color: rgb(255, 255, 255);
+}
+
+#box_2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+    line-height: 1.5em;
+    color: rgb(255, 255, 255);
+}
+
+#container {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: georgia;
+    font-size: 18px;
+    width: 75%;
+    margin: auto;
+} 
+
+#imgprof {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#img {
+    padding: 15px 10px 5px 100px;
+}
+
+#img2 {
+    padding: 15px 0px 5px 30px;
+}
+
+#img3 {
+    padding: 15px 10px 5px 37px;
+}
+
+figcaption {
+    color: rgb(255, 255, 255);
+}
+
+#catimg{
+    border-radius: 45px;
+    padding-right: 45px;
+    float: right;
+    height: 200px;
+}
+
+#kobeimg {
+    border-radius: 45px;
+    padding-right: 45px;
+    float: right;
+    width: 160px;
+    height: 200px;
+}
+
+#b1 {
+    background-color: rgb(71, 66, 66);
+    background-image: linear-gradient(to right, rgb(15, 15, 15), rgb(85, 84, 84));
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    margin-left: 20px;
+    margin-right: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 30%;
+    float: right;
+    font-style: italic;
+    font-size: 14px;
+    border: 5px white solid;
+}
+
+#butwik {
+  background-color: #000000;
+  border: none;
+  color: white;
+  padding: 2px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 2px 4px;
+  cursor: pointer;
+}
+
