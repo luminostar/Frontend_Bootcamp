@@ -1,2 +1,2 @@
-# rafi-s.project.io
+# rafi-s.project.github.io
 Hello, my name is Muh.Rafi Al' Ayyubi
