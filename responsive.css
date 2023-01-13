@@ -1,0 +1,62 @@
+/* For Smartphone Size */
+@media (max-width: 670px) {
+    #container h1 {
+      padding-left: 25px;
+    }
+    
+    #btn-header {
+        float: right;
+    }
+    
+    #btn-header a {
+        float: right;
+        
+    }
+
+    #menu-icon {
+        background-color: white;
+        display: block;
+    }
+
+    #top-image {
+        width: 100%;
+        text-align: left;
+        margin-left: 10px;
+    }
+
+    #top-image h1 {
+        letter-spacing: 5px;
+        font-size: 30px;
+    }
+
+    #top-image p {
+        letter-spacing: 5px;
+        font-size: 20px;
+    }
+
+    #top image img {
+        width: 100%;
+        text-align: center;
+    }
+    
+    #about-wrapper {
+        text-align: left;
+        font-size: 15px;
+        line-height: 20px;
+        padding: 10px 100px 100px 10px;;
+    }
+    
+    #project p {
+      font-size: 10;
+    }
+    
+    #header-bottom h3 {
+      padding-left: 25px;
+    }
+    
+    #nav {
+      margin-right: 25;
+    }
+
+
+}
