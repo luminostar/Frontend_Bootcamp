@@ -1,7 +1,12 @@
 /* For Smartphone Size */
 @media (max-width: 670px) {
+    #container {
+      width: 100%;
+    }
+    
     #container h1 {
-      padding-left: 25px;
+      padding-left: 10px;
+      padding-right: 20px;
     }
     
     #btn-header {
@@ -9,8 +14,18 @@
     }
     
     #btn-header a {
+        padding-top: 10px;
+        font-size: 70%;
         float: right;
-        
+        height: 20px;
+    }
+    
+    #btn-header a:hover {
+      height: 20px;
+    }
+    
+    #clear {
+      display: clear;
     }
 
     #menu-icon {
@@ -22,6 +37,7 @@
         width: 100%;
         text-align: left;
         margin-left: 10px;
+        padding-top: 100px;
     }
 
     #top-image h1 {
@@ -31,10 +47,12 @@
 
     #top-image p {
         letter-spacing: 5px;
-        font-size: 20px;
+        font-size: 15px;
+        padding-top: 15px;
     }
 
     #top image img {
+        padding-top: 15%;
         width: 100%;
         text-align: center;
     }
@@ -46,17 +64,42 @@
         padding: 10px 100px 100px 10px;;
     }
     
+    #project-icon img {
+        width: 22%;
+        display: flexbox;
+        margin: auto 0;
+        padding-inline: 4%;
+    }
+
     #project p {
-      font-size: 10;
+        padding-top: 15px;
+        width: 32%;
+    }
+    
+    #form-wrapper {
+      padding-top: 20px;
+    }
+    
+    #email-text {
+      width: 75%;
+    }
+    
+    #message-text {
+      width: 75%;
+    }
+    
+    #button {
+      width: 50%;
     }
     
     #header-bottom h3 {
+      margin-top: 10px;
       padding-left: 25px;
     }
     
     #nav {
-      margin-right: 25;
+      margin-top: 30px;
+      margin-right: 25px;
     }
-
 
 }
