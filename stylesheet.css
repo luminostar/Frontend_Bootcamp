@@ -60,7 +60,7 @@ body {
     width: 30%;
     padding-top: 20px;
     opacity: 1;
-    transition: all 0.8s;
+    transition: all 0.8s ease-in-out;
     height: 40px;
 }
 
@@ -151,6 +151,11 @@ body {
     margin: auto 0;
     padding-inline: 5%;
 
+}
+
+#project-icon img:hover {
+    transform: scale(0.9);
+    transition: all 0.1s ease-in;
 }
 
 #project p {
