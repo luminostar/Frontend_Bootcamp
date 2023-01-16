@@ -218,7 +218,12 @@ form {
     width: 30%;
     height: 30px;
     border-radius: 5px;
+    cursor: pointer;
     
+}
+
+#button:active {
+    background-color: rgb(102, 94, 94);
 }
 
 #bottom-wrapper {
