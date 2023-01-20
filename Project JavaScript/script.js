@@ -28,7 +28,13 @@ btnClick.addEventListener("click", function() {
         const paragraph = document.createElement("p");
         paragraph.innerHTML = "Buzz!";
         contain.append(paragraph);
-    } 
+    } else {
+        const contain = document.getElementById("container");
+        const paragraph = document.createElement("p");
+        paragraph.innerHTML = "invalid input!";
+        paragraph.style.color = "red";
+        contain.append(paragraph);
+    }
     
     
     
