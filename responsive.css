@@ -63,6 +63,11 @@
         line-height: 20px;
         padding: 10px 100px 100px 10px;;
     }
+
+    #about-wrapper h1 {
+      text-align: left;
+      font-size: 15px;
+    }
     
     #project-icon img {
         width: 22%;
