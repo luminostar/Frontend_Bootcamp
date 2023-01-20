@@ -10,7 +10,7 @@ btnClick.addEventListener("click", function() {
     } else if (a == 0) {
         const contain = document.getElementById("container");
         const paragraph = document.createElement("p");
-        paragraph.innerHTML = "invalid input";
+        paragraph.innerHTML = "invalid input!";
         paragraph.style.color = "red";
         contain.append(paragraph);
     } else if (a % 3 === 0 && a % 5 === 0) {
