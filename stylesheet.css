@@ -1,8 +1,8 @@
+* {box-sizing:border-box}
 body {
     margin: 0;
 
 }
-  
 #header {
     display: block;
     margin-top: 8px;
@@ -34,13 +34,7 @@ body {
     transition: all 0.8s;
 }
 
-#menu-icon {
-    color: white;
-    float: right;
-    font-size: 25px;
-    padding: 21px 0;
-    
-}
+
 
 
 #btn-header {
@@ -61,16 +55,28 @@ body {
     padding-top: 20px;
     opacity: 1;
     transition: all 0.8s ease-in-out;
-    height: 40px;
+    height: 60px;
 }
 
 #btn-header a:hover {
     display: block;
-    height: 40px;
+    height: 60px;
     background-color: rgb(163,163,163);
     opacity: 1;
     border-radius: 15px;
     transition: all 0.4s;    
+}
+
+.sidebar {
+    display: none;
+}
+
+#main {
+    display: none;
+}
+
+#fa {
+    display: none;
 }
 
 #top-image {
@@ -110,7 +116,7 @@ body {
 }
 
 #about-wrapper {
-    height: 400px;
+    height: 550px;
     padding: 80px 150px 80px 150px;
     background-image: linear-gradient(180deg,  rgb(255, 255, 255), rgb(54, 47, 47));
     text-align: center;
@@ -120,18 +126,17 @@ body {
     font-weight: bold;
 }
 
+
 #project-wrapper {
     background-color: rgb(54, 47, 47);
     padding-top: 10px;
     padding-bottom: 150px;
-    padding-left: 10%;
-    padding-right: 10%;
     text-align: center;
 }
 
 #heading {
-    padding-top: 80px;
-    padding-bottom: 50px;
+    padding-top: 60px;
+    padding-bottom: 3s0px;
 }
 
 #heading h2 {
@@ -142,34 +147,77 @@ body {
     letter-spacing: 5px;
 }
 
+#heading p {
+    font-size: 20px;
+    color: white;
+    letter-spacing: 5px;
+}
+
+/* Slideshow container */
 #project {
-    width: 100%;
-}
-
-#project-icon {
-    width: 100%;
+    max-width:250px;
     position: relative;
+    margin: auto;
+    cursor: pointer;
 }
 
-#project-icon img {
-    width: 20%;
-    display: flexbox;
-    margin: auto 0;
-    padding-inline: 5%;
-
+#project:hover {
+    opacity: 0.6;
+    transition: all 0.4s;
 }
 
-#project-icon img:hover {
-    transform: scale(1.1);
-    transition: all 0.1s ease-in;
+.project-icon {display: none;}
+img {vertical-align: middle;}
+
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
 }
 
-#project p {
-    padding-top: 20px;
-    font-weight: normal;
-    color: rgb(255, 255, 255);
-    width: 30%;
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
     display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+    .text {font-size: 11px}
 }
 
 #experience-wrapper {
@@ -261,9 +309,124 @@ form {
     background-color: rgb(102, 94, 94);
 }
 
+#faq {
+    text-align: center;
+}
+
+#faq a {
+    font-size: 20px;
+    color: rgb(68, 65, 65);
+    background-color: rgb(255, 255, 255);
+    height: 0px;
+    text-decoration: none;
+}
+
+#faq a:hover {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: black;
+    transition: all 0.3s ease-in-out;
+}
+
+#faq a:active {
+    background-color: black;
+}
+
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1; 
+    padding-top: 150px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto;
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4);
+  }
+  
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+  
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+  
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+  
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+  
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+  
+.modal-header {
+    padding: 2px 16px;
+    background-color: rgb(54, 47, 47);
+    color: white;
+    font-size: 15px;
+    text-align: center;
+}
+  
+.modal-body {
+    padding: 2px 16px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+  
+.modal-footer {
+    padding: 15px 16px;
+    background-color: rgb(54, 47, 47);
+    font-size: 15px;
+    color: white;
+    text-align: center;
+}
+
+.modal-footer a {
+    text-decoration: none;
+    color: white;
+    padding-inline: 15px;
+}
+
+.modal-footer a:hover {
+    color: rgb(134, 132, 132);
+    transition: all 0.3s ease-out;
+}
+
+
+
+
 #bottom-wrapper {
     background-color: black;
-    height: 30px;
+    height: 125px;
     margin: 0;
     padding-bottom: 100px;
 }
@@ -302,6 +465,207 @@ a:active {
     transition: all 0.5s;
 }
 
+
+/* For Smartphone Size */
+@media screen and (max-width: 500px) {
+    #container {
+      width: 100%;
+    }
+    
+    #container h1 {
+      padding-left: 15px;
+      padding-right: 20px;
+      float: right;
+    }
+
+    #btn-header a {
+        display: none;
+    }
+
+    .sidebar {
+        display: block;
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 8px;
+        right: 0;
+        background-color: rgb(0, 0, 0);
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+      }
+      
+      .sidebar a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        line-height: 40px;
+        font-size: 17px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+      }
+      
+      .sidebar a:hover {
+        color: #f1f1f1;
+      }
+      
+      .sidebar .closebtn {
+        position: absolute;
+        top: 0;
+        right: 15px;
+        font-size: 30px;
+        margin-right: 0px;
+      }
+      
+      .openbtn {
+        font-size: 20px;
+        cursor: pointer;
+        background-color: rgb(0, 0, 0);
+        color: white;
+        padding: 2px 6px;
+        border: none;
+      }
+      
+      .openbtn:hover {
+        background-color: #444;
+        transition: all 0.5s;
+      }
+
+      .openbtn:active {
+        transition: 0.5s ease-in;
+      }
+      
+      #main {
+        display: block;
+        transition: margin-left 0.5s;
+        padding: 16px;
+      }
+
+    #header {
+        display: inline-flex;
+        height: 60px;
+    }
+    
+    #btn-header a:hover {
+      height: 20px;
+    }
+    
+    #top-image {
+        width: 100%;
+        margin-left: 15px;
+        padding-top: 60px;
+        padding-bottom: 50px;
+    }
+
+    #top-image h1 {
+        text-align: left;
+        letter-spacing: 5px;
+        font-size: 25px;
+    }
+
+    #top-image p {
+        text-align: left;
+        letter-spacing: 5px;
+        font-size: 15px;
+        padding-top: 15px;
+    }
+
+    #top-image img {
+        align-items: left;
+        width: 60%;
+        margin: auto 0;
+
+    }
+    
+    
+    #about-wrapper {
+        text-align: left;
+        line-height: 20px;
+        padding: 50px 15px 20px 15px;;
+    }
+
+    #about-wrapper h1 {
+      font-size: 27px;
+    }
+
+    #about-wrapper p {
+        font-size: 18px;
+    }
+
+    #project {
+        max-width: 200px;
+    }
+
+    #heading {
+        padding: 20px 15px 20px 15px;
+    }
+    
+    #heading h2 {
+        text-align: left;
+        font-size: 27px;
+    }
+
+    #heading p {
+        font-size: 17px;
+        text-align: left;
+    }
+
+    #experience-wrapper {
+      text-align: center;
+      padding: 20px 10px 20px 15px;
+    }
+
+    #experience-wrapper h2 {
+    text-align: left;
+    font-size: 20px;
+    letter-spacing: 5px
+
+    }
+
+    #experience-wrapper p {
+      text-align: justify;
+      font-size: 15px;
+      padding-top: 15px;
+      text-align: left;
+    }
+
+    iframe {
+      width: 300px;
+      height: 150px;
+    }
+
+    #form-wrapper {
+      padding-top: 20px;
+    }
+    
+    #email-text {
+      width: 75%;
+    }
+    
+    #message-text {
+      width: 75%;
+    }
+    
+    #button {
+      width: 50%;
+    }
+    
+    #bottom-wrapper {
+        height: 130px;
+    }
+
+    #header-bottom h3 {
+      margin-top: 10px;
+      padding-left: 15px;
+    }
+    
+    #nav {
+      margin-top: 5px;
+      margin-right: 25px;
+    }
+
+}
 
 
 
